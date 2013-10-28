@@ -27,6 +27,12 @@ public class PersonaTest {
     }
 
     @Test
+    public void testNombreCompletoMinuscula() {
+    	 assertEquals("ana vega", this.persona.getNombreCompletoMinuscula());
+    }
+
+    
+    @Test
     public void testGetApellido() {
         assertEquals("Vega", this.persona.getApellido());
     }

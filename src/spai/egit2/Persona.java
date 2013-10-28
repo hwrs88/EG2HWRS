@@ -39,4 +39,10 @@ public class Persona {
         return this.nombre.substring(0, 1) + ".";
     }
 
+    // Devolver nombre y apellido en minuscula
+	public String getNombreCompletoMinuscula() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
