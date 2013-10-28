@@ -73,4 +73,16 @@ public class Fraccion {
 		return false;
 	}
 
+	// Este metodo debe comprobar si esta fracción es mayor que otra pasada por parámetro.
+	public boolean isMayor(Fraccion fraccionAComparar) {
+		// Implementar codigo
+		return false;
+	}
+
+	// Este metodo debe comprobar si esta fracción es menor que otra pasada por parámetro.
+	public boolean isMenor(Fraccion fraccionAComparar) {
+		// Implementar codigo
+		return false;
+	}
+
 }

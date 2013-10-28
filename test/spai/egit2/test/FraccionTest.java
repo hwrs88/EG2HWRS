@@ -51,4 +51,16 @@ public class FraccionTest {
 		assertTrue(fraccion.isEquivalente(fraccionAComparar));
 	}
 
+	@Test
+	public void testIsMayor() {
+		Fraccion fraccionAComparar = new Fraccion(1, 3);
+		assertTrue(fraccion.isMayor(fraccionAComparar));
+	}
+
+	@Test
+	public void testIsMenor() {
+		Fraccion fraccionAComparar = new Fraccion(7, 4);
+		assertTrue(fraccion.isMenor(fraccionAComparar));
+	}
+
 }
