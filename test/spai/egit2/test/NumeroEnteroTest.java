@@ -47,5 +47,10 @@ public class NumeroEnteroTest {
         this.numero.decrementar();
         assertEquals(-1, numero.getValor());
     }
+    
+    public void testIncrementarConParametro(){
+    	NumeroEntero numero = new NumeroEntero(5);
+    	assertEquals(8, numero.incrementarConParametro(3));
+    }
 
 }

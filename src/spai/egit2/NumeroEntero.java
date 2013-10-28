@@ -30,5 +30,11 @@ public class NumeroEntero {
     public void decrementar() {
         this.valor--;
     }
-
+    
+    //Este metodo incrementa el objeto NumeroEntero con el int pasado como parametro
+    public NumeroEntero incrementarConParametro(int parametro) {
+        this.valor += parametro;
+        return this;
+    }
+    
 }
