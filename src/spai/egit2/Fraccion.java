@@ -69,20 +69,31 @@ public class Fraccion {
 
 	// Este metodo debe comprobar si dos fracciones son equivalentes.
 	public boolean isEquivalente(Fraccion fraccionAComparar) {
-		
-		return ( (this.getNumerador() * fraccionAComparar.getDenominador()) == (this.getDenominador() * fraccionAComparar.getNumerador()) );
-		}
 
-	// Este metodo debe comprobar si esta fracción es mayor que otra pasada por parámetro.
-	public boolean isMayor(Fraccion fraccionAComparar) {
-		// Implementar codigo
-		return false;
+		return ((this.getNumerador() * fraccionAComparar.getDenominador()) == (this
+				.getDenominador() * fraccionAComparar.getNumerador()));
 	}
 
-	// Este metodo debe comprobar si esta fracción es menor que otra pasada por parámetro.
+	// Este metodo debe comprobar si esta fracción es mayor que otra pasada por
+	// parámetro.
+	public boolean isMayor(Fraccion fraccionAComparar) {
+		// Implementar codigo
+		double valorFraccionUno = ((double) this.getNumerador())
+				/ ((double) this.getDenominador());
+		double valorFraccionDos = ((double) fraccionAComparar.getNumerador())
+				/ ((double) fraccionAComparar.getDenominador());
+		return valorFraccionUno > valorFraccionDos;
+	}
+
+	// Este metodo debe comprobar si esta fracción es menor que otra pasada por
+	// parámetro.
 	public boolean isMenor(Fraccion fraccionAComparar) {
 		// Implementar codigo
-		return false;
+		double valorFraccionUno = ((double) this.getNumerador())
+				/ ((double) this.getDenominador());
+		double valorFraccionDos = ((double) fraccionAComparar.getNumerador())
+				/ ((double) fraccionAComparar.getDenominador());
+		return valorFraccionUno < valorFraccionDos;
 	}
 
 }
