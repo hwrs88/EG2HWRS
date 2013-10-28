@@ -34,4 +34,10 @@ public class ColeccionDecimales {
         return mayor;
     }
 
+    // Este metodo debe multiplicar la colección de decimales y devolver el valor.
+	public double multiplicar() {
+		// Implementar codigo
+		return -1;
+	}
+
 }
