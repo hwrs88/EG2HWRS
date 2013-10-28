@@ -50,14 +50,14 @@ public class NumeroEnteroTest {
     
     @Test
     public void testIncrementarConParametro(){
-    	NumeroEntero entero1 = new NumeroEntero(2).incrementarConParametro(3);
-    	assertEquals((new NumeroEntero(5)).getValor(), entero1.getValor());
+        this.numero.incrementarConParametro(10);
+        assertEquals(110, this.numero.getValor());
     }
     
     @Test
     public void testDecrementarConParametro(){
-    	NumeroEntero entero2 = new NumeroEntero(5).decrementarConParametro(3);
-    	assertEquals((new NumeroEntero(2)).getValor(), entero2.getValor());
+        this.numero.decrementarConParametro(6);
+        assertEquals(94, this.numero.getValor());
     }
 
 }
