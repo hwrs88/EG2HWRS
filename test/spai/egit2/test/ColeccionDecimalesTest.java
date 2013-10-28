@@ -28,7 +28,7 @@ public class ColeccionDecimalesTest {
 
 	@Test
 	public void testMultiplicar() {
-		assertEquals(4.9, this.numeros.multiplicar(), 1e-10);
+		assertEquals(4.896, this.numeros.multiplicar(), 1e-10);
 	}
 
 }
