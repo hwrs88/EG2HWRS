@@ -69,9 +69,9 @@ public class Fraccion {
 
 	// Este metodo debe comprobar si dos fracciones son equivalentes.
 	public boolean isEquivalente(Fraccion fraccionAComparar) {
-		// Implementar codigo
-		return false;
-	}
+		
+		return ( (this.getNumerador() * fraccionAComparar.getDenominador()) == (this.getDenominador() * fraccionAComparar.getNumerador()) );
+		}
 
 	// Este metodo debe comprobar si esta fracción es mayor que otra pasada por parámetro.
 	public boolean isMayor(Fraccion fraccionAComparar) {
