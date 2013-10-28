@@ -48,9 +48,16 @@ public class NumeroEnteroTest {
         assertEquals(-1, numero.getValor());
     }
     
+    @Test
     public void testIncrementarConParametro(){
-    	NumeroEntero numero = new NumeroEntero(5);
-    	assertEquals(8, numero.incrementarConParametro(3));
+    	NumeroEntero entero1 = new NumeroEntero(2).incrementarConParametro(3);
+    	assertEquals((new NumeroEntero(5)).getValor(), entero1.getValor());
+    }
+    
+    @Test
+    public void testDecrementarConParametro(){
+    	NumeroEntero entero2 = new NumeroEntero(5).decrementarConParametro(3);
+    	assertEquals((new NumeroEntero(2)).getValor(), entero2.getValor());
     }
 
 }
