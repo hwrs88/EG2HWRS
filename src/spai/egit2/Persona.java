@@ -42,14 +42,12 @@ public class Persona {
 
 	// Devolver nombre y apellido en minuscula
 	public String getNombreCompletoMinuscula() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.nombreCompleto().toLowerCase();
 	}
 
-	// Devolver el "Apellido, Nombre".
+	// Devolver apellido , nombre para los documentos
 	public String getNombreParaDocumentos() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.apellido + " , " + this.nombre;
 	}
 
 }
