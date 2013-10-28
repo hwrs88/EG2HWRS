@@ -45,4 +45,10 @@ public class FraccionTest {
         assertEquals(2.0/3.0, fraccion.decimal(), 1e-10);
     }
 
+	@Test
+	public void testIsEquivalente() {
+		Fraccion fraccionAComparar = new Fraccion(4, 6);
+		assertTrue(fraccion.isEquivalente(fraccionAComparar));
+	}
+
 }
